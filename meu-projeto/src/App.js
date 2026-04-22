@@ -1,5 +1,8 @@
 import "./App.css";
-import OutraLista from "./components/OutraLista";
+import { useState } from "react";
+import SeuNome from "./components/SeuNome";
+import Saudacao from "./components/Saudacao";
+// import OutraLista from "./components/OutraLista";
 // import Condicional from "./components/Condicional";
 // import HelloWorld from "./components/HelloWorld";
 // import SayMyName from "./components/SayMyName";
@@ -9,21 +12,21 @@ import OutraLista from "./components/OutraLista";
 // import Evento from "./components/Evento";
 // import Form from "./components/Form";
 function App() {
-
-  const meusItens = ["React", "Vue", "Angular"];
-
+  const[nome, setNome] = useState();
   return (
     <div className="App">
-      <h1>Renderização de Lista</h1>
-      <OutraLista itens={meusItens} />
-      <OutraLista itens={[]} />
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome} />
+      <Saudacao nome={nome} />
     </div>
   );
 }
 
 export default App;
 //modelo de comando de outros componentes.
-/* 
+/*    
+      <OutraLista itens={meusItens} />
+      <OutraLista itens={[]} />
       <Condicional />
       <Frase />
       <Evento />
