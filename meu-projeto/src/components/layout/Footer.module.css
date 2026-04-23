@@ -1,0 +1,36 @@
+.social_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_list li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social_list svg {
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social_list svg:hover {
+  transform: scale(1.2);
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+.facebook {
+  color: #1877f2;
+}
+
+.instagram {
+  color: #e1306c;
+}
+
+.linkedin {
+  color: #0077b5;
+}

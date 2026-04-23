@@ -1,0 +1,9 @@
+.list{
+  display: flex;
+  list-style: none;
+}
+.item{
+  margin-right: 1em;
+  border-radius: 20px;
+  border-bottom: 3px solid #ccc;
+}
